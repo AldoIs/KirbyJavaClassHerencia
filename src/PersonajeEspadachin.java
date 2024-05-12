@@ -11,7 +11,7 @@ public class PersonajeEspadachin extends Personaje {
     public PersonajeEspadachin(String nombre, int vida, int ataque, String arma) {
         super(nombre, vida, ataque);
         this.arma = arma;
-        System.out.println("Y " + nombre + "tiene de arma: " + arma);
+        System.out.println(" y " + nombre + " tiene de arma: " + arma);
         
     }
     @Override
