@@ -1,6 +1,6 @@
 public class Personaje {
     private String nombre;
-    private int vida;
+    protected int vida;
     private int ataque;
 
     public Personaje(String nombre, int vida, int ataque) {

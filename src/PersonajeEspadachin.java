@@ -17,5 +17,10 @@ public class PersonajeEspadachin extends Personaje {
     @Override
     public void atacar(Personaje enemigo, int ataque) {
         System.out.println("El Personaje " + getNombre() + " ha atacado a " + enemigo.getNombre() + " con su " + arma + " y ha causado " + ataque + " de danio");
+        enemigo.vida -= ataque;
+        System.out.println("El Personaje " + enemigo.getNombre() + " ha recibido un ataque de " + ataque + " puntos de daño");
+        if (enemigo.vida <= 0) {
+            System.out.println("El Personaje " + enemigo.getNombre() + " ha sido derribado");
+        }
     }
 }
